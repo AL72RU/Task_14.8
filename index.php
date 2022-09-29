@@ -1,3 +1,7 @@
+<?php
+    session_start();
+?>
+
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -11,7 +15,16 @@
             <a class="navbar-brand">СПА процедуры</a>
             <div class="navbar-wrap">
                 <ul class="navbar-menu">
-                    <li><a href="/login.php">Log in</a></li>
+                    <li>
+                        <?php
+                            if ($_SESSION['user']['login']) {
+                                echo '<a href="/login.php"> ' . $_SESSION['user']['login'] . ' </a>';
+                            }
+                            else {
+                                echo '<a href="/login.php">Log in</a>';
+                            }
+                        ?>
+                    </li>
                 </ul>
             </div>
         </div>
@@ -22,5 +35,8 @@
             <img src="/images/spa.jpg">
         </div>
     </div>
+    
+    
+
 </body>
 </html>
