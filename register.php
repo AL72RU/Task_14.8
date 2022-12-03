@@ -10,12 +10,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <!-- Форма регистрации -->
-
     <form action="vendor/signup.php" method="post" enctype="multipart/form-data">
         <label>ФИО</label>
         <input type="text" name="full_name" placeholder="Введите свое полное имя">

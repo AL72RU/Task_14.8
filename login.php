@@ -1,23 +1,20 @@
 <?php
-session_start();
-
-if ($_SESSION['user']) {
-    header('Location: profile.php');
-}
-
+    session_start();
+    if ($_SESSION['user']) {
+        header('Location: profile.php');
+    }
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
-<!-- Форма авторизации -->
-
+    <!-- Форма авторизации -->
     <form action="vendor/signin.php" method="post">
         <label>Логин</label>
         <input type="text" name="login" placeholder="Введите свой логин">

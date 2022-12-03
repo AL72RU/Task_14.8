@@ -51,7 +51,7 @@ button {
     font-weight: bold;
 }
 
-.logout {
+.form_logout {
     color: #b7625c;
 }
 
@@ -77,8 +77,3 @@ button {
     justify-content: center;
     font-family: Montserrat, sans-serif;
 }
-
-
-
-
-

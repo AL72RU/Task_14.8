@@ -6,21 +6,21 @@ if (!$_SESSION['user']) {
 ?>
 
 <!doctype html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>Авторизация и регистрация</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
 
     <!-- Профиль -->
 
-    <form>
-        <img src="<?= $_SESSION['user']['avatar'] ?>" width="200" alt="">
-        <h2 style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
-        <a href="#"><?= $_SESSION['user']['email'] ?></a>
-        <a href="vendor/logout.php" class="logout">Выход</a>
+    <form class="form">
+        <img class="form_img" src="<?= $_SESSION['user']['avatar'] ?>" width="200" alt="">
+        <h2 class="form_full-name" style="margin: 10px 0;"><?= $_SESSION['user']['full_name'] ?></h2>
+        <a class="form_email" href="#"><?= $_SESSION['user']['email'] ?></a>
+        <a class="form_logout" href="vendor/logout.php">Выход</a>
     </form>
 
 </body>

@@ -7,7 +7,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>СПА процедуры</title>
-	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="css/index.css">
 </head>
 <body>
     <nav class="navbar">
@@ -32,7 +32,7 @@
 	
     <div class="row">
         <div class="box1">
-            <img src="/images/spa.jpg">
+            <img src="/images/spa.jpg" alt="Фото">
         </div>
     </div>
     
